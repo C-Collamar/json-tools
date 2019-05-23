@@ -1,0 +1,39 @@
+section#result {
+    display: none;
+}
+
+#result h2 {
+    text-align: center;
+}
+
+#result .error {
+    color: #E91E63;
+}
+
+#result .success {
+    color: #4CAF50;
+}
+
+.card {
+    width: 100%;
+    padding: 20px;
+    transition: opacity 1s ease;
+}
+
+.card .side-border {
+    border-left: 3px solid red;
+    padding-left: 20px;
+}
+
+.card .head,
+.card .data {
+    display: inline-block;
+}
+
+.card .head {
+    min-width: 80px;
+}
+
+.card .data {
+    font-family: 'Courier New', Courier, monospace;
+}

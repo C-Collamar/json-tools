@@ -1,0 +1,44 @@
+nav#navbar {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    background: #00F260;
+    background: -webkit-linear-gradient(to right, #0575E6, #00F260);
+    background: linear-gradient(to right, #0575E6, #00F260);
+}
+
+nav#navbar > ul {
+    list-style: none;
+    text-align: right;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav#navbar > ul > li {
+    display: inline-block;
+}
+
+nav#navbar > ul > li > a {
+    color: white;
+    text-decoration: none;
+    margin: 0px 15px;
+}
+
+nav#navbar.hide {
+    top: -50.67px;
+}
+
+main {
+    margin-top: 50.67px;
+}
+
+main.push-up {
+    margin-top: 10px;
+}
+
+nav#navbar, main {
+    -webkit-transition: ease 0.2s;
+    -moz-transition: ease 0.2s;
+    -o-transition: ease 0.2s;
+    transition: ease 0.2s;
+}

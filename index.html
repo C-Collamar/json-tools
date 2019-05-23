@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Formatter &amp; Validator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/global.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/form.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/result.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/treeview.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/convert.css">
+</head>
+<body>
+    <nav role="navigation" id="navbar">
+        <ul>
+            <li><a href="#validate">Validate</a></li>
+        </ul>
+    </nav>
+    <main role="main">
+        <header>
+            <hgroup>
+                <h1>JSON</h1>
+                <h2>Formatter</h2>
+                <h2>Validator</h2>
+                <h2>Converter</h2>
+            </hgroup>
+        </header>
+        <section id="validate">
+            <h2>JSON Code</h2>
+            <p>Enter your JSON code to process.</p>
+            <form id="input-json-form">
+                <textarea id="code" class="boxshadowed emphasize-focus" spellcheck="false" wrap="soft"></textarea>
+                <div class="options">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label for="use-space">Use spaces over tabs</label>
+                                    <label class="switch">
+                                        <input type="checkbox" id="use-space" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label for="space-per-tab">Space per indentation</label>
+                                    <input type="number" min="0" id="space-per-tab" value="4">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button type="submit" id="process" disabled>Process</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </form>
+        </section>
+        <section id="result">
+            <header>
+                <h2><span id="result-msg"></span></h2>
+                <p id="helper-paragraph"></p>
+            </header>
+            <div id="error-content"></div>
+        </section>
+        <section id="treeview">
+            <header>
+                <h2>Treeview</h2>
+                <p>Interact with your data like never before! With this tool, you could seamlessly navigate through your data simply by toggling panels.</p>
+            </header>
+            <div id="treeview-container"></div>
+        </section>
+        <section id="convert">
+            <header>
+                <h2>Conversion</h2>
+                <p>Convert JSON data to other formats!</p>
+            </header>
+            <div class="boxshadowed emphasize-focus" tabindex="0">
+                <div class="table">
+                    <div class="table-row" id="tab-container">
+                        <div id="XMLTab" class="table-cell top-left-curve selected">XML</div>
+                        <div id="CSVTab" class="table-cell">CSV</div>
+                        <div id="YAMLTab" class="table-cell top-right-curve">YAML</div>
+                    </div>
+                </div>
+                <textarea id="converted-format-container" spellcheck="false" wrap="soft"></textarea>
+            </div>
+        </section>
+    </main>
+    <footer id="about" style="min-height: 100px; background-color: #333; margin-top: 50px"></footer>
+    <script src="js/validation.js"></script>
+    <script src="js/result.js"></script>
+    <script src="js/treeview.js"></script>
+    <script src="js/converter.js"></script>
+    <script src="js/event_handler.js"></script>
+</body>
+</html>

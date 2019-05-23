@@ -1,0 +1,57 @@
+#convert {
+    display: none;
+}
+
+#convert .table {
+    display: table;
+    width: 100%;
+}
+
+#convert .table .table-row {
+    display: table-row;
+}
+
+#convert .table .table-row .table-cell {
+    display: table-cell;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+}
+
+#convert .table .table-row .table-cell:hover {
+    background-color: #f8f8f8;
+}
+
+#convert .table .table-row .table-cell.selected {
+    background-color: white;
+}
+
+#convert .table .table-row .table-cell.top-left-curve {
+    border-radius: 10px 0px 0px;
+}
+
+#convert .table .table-row .table-cell.top-right-curve {
+    border-radius: 0px 10px 0px 0px;
+}
+
+#convert #converted-format-container {
+    padding: 20px;
+    overflow: auto;
+    box-sizing: border-box;
+    white-space: nowrap;
+    border: none;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 300px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+#convert #converted-format-container:focus {
+    outline: none;
+}
+
+#convert #converted-format-container::-webkit-scrollbar { 
+    display: none;
+}
